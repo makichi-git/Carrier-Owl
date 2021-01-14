@@ -14,6 +14,7 @@ beautifulsoup4 = "^4.9.3"
 selenium = "^3.141.0"
 chromedriver-binary = "87.*"
 arxiv = "^0.5.3"
+pymsteams = "^0.1.14"
 
 [tool.poetry.dev-dependencies]
 
