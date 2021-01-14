@@ -6,6 +6,7 @@ import time
 import yaml
 import datetime
 import slackweb
+import pymsteams
 import argparse
 import textwrap
 from bs4 import BeautifulSoup
@@ -63,6 +64,12 @@ def search_keyword(
 
 
 def send2app(text: str, slack_id: str, line_token: str) -> None:
+    # teams
+    if slack_id is not None:
+        myTeamsMessage = pymsteams.connectorcard(slack_id)
+        myTeamsMessage.text(text)
+        myTeamsMessage.send()
+    
     # slack
     if slack_id is not None:
         slack = slackweb.Slack(url=slack_id)
