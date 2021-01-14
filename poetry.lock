@@ -136,6 +136,14 @@ optional = false
 python-versions = "*"
 
 [[package]]
+name = "pymsteams"
+version = "0.1.14"
+description = "teams bot for incomming webhook"
+category = "main"
+optional = false
+python-versions = "*"
+
+[[package]]
 name = "soupsieve"
 version = "2.1"
 description = "A modern CSS selector implementation for Beautiful Soup."
