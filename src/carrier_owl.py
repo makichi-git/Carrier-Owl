@@ -71,9 +71,9 @@ def send2app(text: str, slack_id: str, line_token: str) -> None:
         myTeamsMessage.send()
     
     # slack
-    if slack_id is not None:
-        slack = slackweb.Slack(url=slack_id)
-        slack.notify(text=text)
+#    if slack_id is not None:
+#        slack = slackweb.Slack(url=slack_id)
+#        slack.notify(text=text)
 
     # line
     if line_token is not None:
