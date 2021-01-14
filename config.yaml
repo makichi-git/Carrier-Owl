@@ -5,7 +5,7 @@ subject: 'cat:cs.AI OR cat:cs.CV'
 keywords:
         unsupervised: 1
         semi-supervised: 1
-        pose: 3
+        pose estimation: 3
 
 # 通知の閾値
-score_threshold: 0
+score_threshold: 3
